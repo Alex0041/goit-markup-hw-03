@@ -200,6 +200,10 @@ display: block;
 
 /* advantage */
 
+.advantage-container {
+  padding-top: 94px;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -247,6 +251,7 @@ font-size: 16px;
 line-height: 1.87;
 letter-spacing: 0.03em;
 color:var(--primary-text-color);
+margin-top: 4px;
 }
 
 /* work-examples */
@@ -287,6 +292,7 @@ color:var(--primary-text-color);
 
 .list-team {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
@@ -307,13 +313,16 @@ color:var(--primary-text-color);
   line-height: 1.18;
   letter-spacing: 0.03em;
   text-align: center;
-  margin-bottom: 10px;
-  margin-top: 30px;
+}
+
+.team-profession-title {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .profession {
-  margin-bottom: 30px;
   text-align: center;
+  margin-top: 10px;
 }
 
 /* footer */
@@ -362,6 +371,23 @@ color:var(--primary-text-color);
 
 /* filter */
 
+.projects-container {
+  display: flex;
+  align-items: center;
+  padding-bottom: 34px;
+}
+
+.list-projects {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.projects-menu:not(:last-child){
+  margin-right: 8px;
+}
+
 .button-filter {
   background: var(--second-background-color);
   border-radius: 4px;
@@ -383,10 +409,27 @@ color:var(--primary-text-color);
 
 /* sample projects */
 
+.sample-projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
 .title-projects {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
+}
+
+.projects-cart {
+flex-basis: calc((100% - 60px) / 3);
+}
+
+.projects-title-sites {
+border: 1px solid #EEEEEE;
+padding: 20px 24px;
+border-top: none;
+background-color: var(--primary-white-color);
 }
