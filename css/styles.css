@@ -77,6 +77,10 @@ img {
 
 /* site-nav */
 
+.page-header {
+  border-bottom: 1px solid #ECECEC;
+}
+
 .page-header-container {
 display: flex;
 align-items: center;
@@ -108,8 +112,8 @@ align-items: center;
 }
 
 .menu-link {
-padding-top: 24px;
-padding-bottom: 25px;
+padding-top: 32px;
+padding-bottom: 32px;
 padding-left: 0;
 padding-right: 0;
 display: block;
@@ -138,8 +142,11 @@ display: block;
   color: var(--accent-color);
 }
 
+.mail-link {
+  margin-right: 50px;
+}
+
 .mail-header {
-margin-right: 50px;
 margin-left: auto;
 padding-top: 24px;
 padding-bottom: 25px;
@@ -200,7 +207,7 @@ display: block;
 
 /* advantage */
 
-.advantage-container {
+.advantage-section {
   padding-top: 94px;
 }
 
@@ -328,12 +335,12 @@ margin-top: 4px;
 /* footer */
 
 .footer {
+  padding: 60px 0;
   background-color: var(--hero-footer-color);
 }
 
 .logo-footer {
   display: block;
-  padding-top: 60px;
   margin-bottom: 20px;
   width: 145px;
 }
@@ -357,14 +364,11 @@ margin-top: 4px;
 }
 
 .footer-mail {
-  display: block;
   margin-top: 10px;
 }
 
 .footer-tel {
-  display: block;
   margin-top: 10px;
-  padding-bottom: 60px;
 }
 
 /* portfolio.html */
@@ -374,7 +378,7 @@ margin-top: 4px;
 .projects-container {
   display: flex;
   align-items: center;
-  padding-bottom: 34px;
+ margin-bottom: 50px;
 }
 
 .list-projects {
@@ -394,6 +398,7 @@ margin-top: 4px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+  padding: 6px 22px;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
   cursor: pointer;
